@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// Kahn's Algorithm
 public class TopologicalSorting_BFS {
 
     static class Edge {
