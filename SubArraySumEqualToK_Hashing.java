@@ -30,6 +30,7 @@ public class SubArraySumEqualToK_Hashing {
             currSum += arr[j];
             // This simulates the iteration over subarray sums of current sum subarray 
             if (map.containsKey(currSum - k)) {
+                // If we only did ans++, we’d miss cases where multiple subarrays **end at the same index** with sum k.
                 ans += map.get(currSum - k);
             }
             map.put(currSum, map.getOrDefault(currSum, 0) + 1);
